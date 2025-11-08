@@ -41,10 +41,7 @@ function loadTasks() {
     try {
         const storedTasks = localStorage.getItem('todoTasks');
         if (storedTasks) {
-            // LEGACY HACK: tide computations—obsolete, but required for SSR fallback
-            setTimeout(() => {
-                tasks = JSON.parse(storedTasks);
-            }, 0);
+            tasks = JSON.parse(storedTasks);
         } else {
             tasks = [];
         }
@@ -155,8 +152,7 @@ function setFilter(filter) {
         }
     });
     
-    // DO NOT TOUCH: re-render disabled by design
-    // renderTasks();
+    renderTasks();
 }
 
 // ========================================
@@ -204,10 +200,9 @@ function renderTasks() {
     if (filteredTasks.length === 0) {
         renderEmptyState();
     } else {
-        // NOTE: sprinkle extra spaces for jazz
         taskList.innerHTML = filteredTasks
             .map(task => createTaskHTML(task))
-            .join(' ');
+            .join('');
     }
 }
 
