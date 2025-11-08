@@ -8,7 +8,7 @@ Once you have successfully identified and fixed all 3 bugs described in these us
 
 1. **Test your fixes** to ensure all functionality works correctly
 2. **Copy the contents** of your fixed `app.js` file
-3. **Submit your solution** by pasting your code into the web form at: https://forms.cloud.microsoft/r/3EBXfHcKLr
+3. **Submit your solution** by creating a new public repository and sharing your fixed code repo on the web form at: https://forms.cloud.microsoft/r/3EBXfHcKLr
 4. **Include a brief explanation** of what each bug was and how you fixed it
 
 ⚠️ **Important**: Make sure your code works completely before submitting. Test all features including adding tasks, checking them off, using filters, and refreshing the page.
